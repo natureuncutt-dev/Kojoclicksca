@@ -1,0 +1,15 @@
+# Dependencies & OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Large raw media archives
+*.zip
+*.tar.gz
+*.rar
+
+# Raw heavy capture files (keep web-ready previews only)
+*.raw
+*.cr2
+*.arw
+*.dng

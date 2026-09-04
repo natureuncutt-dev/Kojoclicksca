@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOJOCLICKS — Film • Photography • Stories | Kojo Adejumo</title>
+  <meta name="description" content="Official KOJOCLICKS website — a cinematic portfolio showcasing filmmaking, cinematography, photography, events, travel, and visual storytelling by Kojo Adejumo. Based in Canada, creating everywhere.">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="KOJOCLICKS — Stories in Motion. Moments in Focus.">
+  <meta property="og:description" content="Cinematic portfolio showcasing filmmaking, cinematography, photography, events, and travel narratives by Kojo Adejumo.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kojoclicks.ca">
+  <meta property="og:image" content="assets/images/kojo-profile.jpg">
+
+  <!-- Favicon placeholder / SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Film Grain Texture Overlay -->
+  <div class="film-grain" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       1. TOP TECHNICAL STATUS BAR (Hovig Hagopian Cinematographer HUD)
+       ========================================================================== -->
+  <header class="top-status-bar">
+    <div class="top-status-inner">
+      <div class="status-indicator">
+        <span class="status-dot"></span>
+        <span>KOJOCLICKS STUDIO // DIR. KOJO ADEJUMO</span>
+      </div>
+      <div class="status-hide-mobile">
+        <span>STATUS: ACCEPTING 2026/2027 COMMISSIONS</span>
+      </div>
+      <div>
+        <span id="liveTime">TORONTO --:-- EST</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       2. MINIMAL NAVIGATION (Whitman Fixed Navigation)
+       ========================================================================== -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="#home" class="brand-logo">
+        <span class="brand-name">KOJOCLICKS</span>
+        <span class="brand-sub">Film • Photography • Stories</span>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#films" class="nav-link">Films</a></li>
+        <li><a href="#photography" class="nav-link">Photography</a></li>
+        <li><a href="#travel" class="nav-link">Travel</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn-primary">Start a Project</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div>
+      <button class="drawer-close" id="drawerCloseBtn" aria-label="Close Navigation">✕</button>
+      <div class="brand-logo" style="margin-top: 2rem;">
+        <span class="brand-name">KOJOCLICKS</span>
+        <span class="brand-sub">Film • Photography • Stories</span>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#films">Films</a></li>
+        <li><a href="#photography">Photography</a></li>
+        <li><a href="#travel">Travel Stories</a></li>
+        <li><a href="#about">Meet Kojo</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Book a Shoot</a></li>
+      </ul>
+    </div>
+    <div style="border-top: 1px solid var(--border-subtle); padding-top: 1.5rem;">
+      <p class="mono-tag" style="margin-bottom: 0.5rem;">Based in Canada · Creating Everywhere</p>
+      <a href="mailto:natureuncutt@gmail.com" style="font-size: 0.875rem; color: var(--text-muted);">natureuncutt@gmail.com</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ==========================================================================
+         3. HERO SECTION (Cinematic Showreel x Viewfinder Reticle HUD)
+         ========================================================================== -->
+    <section class="hero" id="home">
+      <!-- Background Showreel Video Loop -->
+      <video class="hero-video-bg" autoplay muted loop playsinline poster="assets/images/lifestyle-1.jpg">
+        <source src="assets/videos/showreel-preview.mp4" type="video/mp4">
+      </video>
+      <div class="hero-gradient"></div>
+
+      <!-- Camera Viewfinder Reticle Overlay -->
+      <div class="viewfinder-hud">
+        <div class="hud-corner hud-tl"></div>
+        <div class="hud-corner hud-tr"></div>
+        <div class="hud-corner hud-bl"></div>
+        <div class="hud-corner hud-br"></div>
+        <div class="hud-center-cross"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <span>[ 4K CINEMATOGRAPHY & VISUAL STORIES ]</span>
+        </div>
+
+        <h1 class="hero-title">
+          STORIES IN MOTION.<br>
+          <span class="title-accent">MOMENTS IN FOCUS.</span>
+        </h1>
+
+        <p class="hero-statement">
+          “Every frame holds a story. My job is to find it, capture it, and make it unforgettable.”
+        </p>
+
+        <div class="hero-cta-group">
+          <button class="btn-primary" data-video-modal data-title="KOJOCLICKS Showreel" data-category-label="Directing & Cinematography" data-meta="Shot on 4K Cinema • Canada / Global" data-video-src="assets/videos/showreel-preview.mp4">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Watch Showreel
+          </button>
+          <a href="#films" class="btn-outline">
+            View Selected Work
+          </a>
+        </div>
+
+        <div class="hero-meta-strip">
+          <span><strong style="color: #fff;">FORMAT:</strong> 4K CINEMA / ANAMORPHIC</span>
+          <span><strong style="color: #fff;">ORIGIN:</strong> BASED IN CANADA</span>
+          <span><strong style="color: #fff;">DIRECTOR:</strong> KOJO ADEJUMO</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. SELECTED WORKS / FILMS (Grid / List Switcher - Hovig Hagopian Style)
+         ========================================================================== -->
+    <section class="section" id="films">
+      <div class="container">
+        <!-- Section Header with View Mode Switcher -->
+        <div class="section-header-hud">
+          <div class="section-title-wrap">
+            <span class="section-hud-label">[ ARCHIVE // 01 ]</span>
+            <h2 class="section-title">Selected Film Works</h2>
+          </div>
+
+          <!-- Hovig Hagopian Grid / List Switcher -->
+          <div class="view-mode-switcher">
+            <button class="view-btn active" id="viewGridBtn" aria-label="Grid View">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+              Grid
+            </button>
+            <button class="view-btn" id="viewListBtn" aria-label="List View">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+              List
+            </button>
+          </div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="commercial">Commercial & Branded</button>
+          <button class="filter-btn" data-filter="wedding">Weddings & Milestones</button>
+          <button class="filter-btn" data-filter="fitness">Motion & Fitness</button>
+          <button class="filter-btn" data-filter="editorial">Documentary & Narrative</button>
+        </div>
+
+        <!-- =======================
+             A. GRID VIEW
+             ======================= -->
+        <div class="projects-grid" id="projectsGrid">
+          
+          <!-- Project 1: Polo Club -->
+          <article class="project-card" data-category="commercial" data-video-modal data-title="Polo Club" data-category-label="Commercial & Lifestyle" data-meta="Directed & Shot by Kojo Adejumo • 4K Cinema" data-video-src="assets/videos/showreel-preview.mp4">
+            <div class="card-reticle reticle-tl"></div>
+            <div class="card-reticle reticle-tr"></div>
+            <div class="card-reticle reticle-bl"></div>
+            <div class="card-reticle reticle-br"></div>
+            
+            <div class="card-media">
+              <img src="assets/images/lifestyle-1.jpg" alt="Polo Club Cinematography" loading="lazy">
+              <video muted loop playsinline preload="none">
+                <source src="assets/videos/showreel-preview.mp4" type="video/mp4">
+              </video>
+              <div class="card-play-trigger">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </div>
+            </div>
+            <div class="card-info">
+              <div>
+                <h3 class="card-title">Polo Club</h3>
+                <span class="card-category">Commercial / Luxury Lifestyle</span>
+              </div>
+              <div class="card-meta">
+                <span>[ 4K • 2026 ]</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Francisca & Anthony Wedding Film -->
+          <article class="project-card" data-category="wedding" data-video-modal data-title="Francisca & Anthony" data-category-label="Cinematic Wedding Feature" data-meta="Feature Highlight Film • Canada • Directed by Kojo Adejumo" data-video-src="assets/videos/showreel-preview.mp4">
+            <div class="card-reticle reticle-tl"></div>
+            <div class="card-reticle reticle-tr"></div>
+            <div class="card-reticle reticle-bl"></div>
+            <div class="card-reticle reticle-br"></div>
+
+            <div class="card-media">
+              <img src="assets/images/wedding-1.jpg" alt="Francisca & Anthony Wedding" loading="lazy">
+              <video muted loop playsinline preload="none">
+                <source src="assets/videos/showreel-preview.mp4" type="video/mp4">
+              </video>
+              <div class="card-play-trigger">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </div>
+            </div>
+            <div class="card-info">
+              <div>
+                <h3 class="card-title">Francisca & Anthony</h3>
+                <span class="card-category">Cinematic Wedding Story</span>
+              </div>
+              <div class="card-meta">
+                <span>[ FEATURE FILM ]</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Axon Socials -->
+          <article class="project-card" data-category="commercial" data-video-modal data-title="Axon Socials" data-category-label="Branded Campaign" data-meta="Client Campaign • 4K Editorial • Directed by Kojo Adejumo" data-video-src="assets/videos/showreel-preview.mp4">
+            <div class="card-reticle reticle-tl"></div>
+            <div class="card-reticle reticle-tr"></div>
+            <div class="card-reticle reticle-bl"></div>
+            <div class="card-reticle reticle-br"></div>
+
+            <div class="card-media">
+              <img src="assets/images/editorial-1.jpg" alt="Axon Socials Campaign" loading="lazy">
+              <video muted loop playsinline preload="none">
+                <source src="assets/videos/showreel-preview.mp4" type="video/mp4">
+              </video>
+              <div class="card-play-trigger">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </div>
+            </div>
+            <div class="card-info">
+              <div>
+                <h3 class="card-title">Axon Socials</h3>
+                <span class="card-category">Branded Campaign & Digital</span>
+              </div>
+              <div class="card-meta">
+                <span>[ COMMERCIAL ]</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: D_Champs Fit -->
+          <article class="project-card" data-category="fitness" data-video-modal data-title="D_Champs Fit" data-category-label="High-Energy Dynamic Motion" data-meta="Sports & Athletic Direction • Directed by Kojo Adejumo" data-video-src="assets/videos/showreel-preview.mp4">
+            <div class="card-reticle reticle-tl"></div>
+            <div class="card-reticle reticle-tr"></div>
+            <div class="card-reticle reticle-bl"></div>
+            <div class="card-reticle reticle-br"></div>
+
+            <div class="card-media">
+              <img src="assets/images/fashion-1.jpg" alt="D_Champs Fitness Motion" loading="lazy">
+              <video muted loop playsinline preload="none">
+                <source src="assets/videos/showreel-preview.mp4" type="video/mp4">
+              </video>
+              <div class="card-play-trigger">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </div>
+            </div>
+            <div class="card-info">
+              <div>
+                <h3 class="card-title">D_Champs Fit</h3>
+                <span class="card-category">Athletic & Motion Film</span>
+              </div>
+              <div class="card-meta">
+                <span>[ 4K 60FPS ]</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Hope & Francis -->
+          <article class="project-card" data-category="wedding" data-video-modal data-title="Hope & Francis" data-category-label="Wedding Film Story" data-meta="Cinematic Wedding Highlights • Directed by Kojo Adejumo" data-video-src="assets/videos/showreel-preview.mp4">
+            <div class="card-reticle reticle-tl"></div>
+            <div class="card-reticle reticle-tr"></div>
+            <div class="card-reticle reticle-bl"></div>
+            <div class="card-reticle reticle-br"></div>
+
+            <div class="card-media">
+              <img src="assets/images/portrait-2.jpg" alt="Hope & Francis Wedding" loading="lazy">
+              <video muted loop playsinline preload="none">
+                <source src="assets/videos/showreel-preview.mp4" type="video/mp4">
+              </video>
+              <div class="card-play-trigger">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </div>
+            </div>
+            <div class="card-info">
+              <div>
+                <h3 class="card-title">Hope & Francis</h3>
+                <span class="card-category">Wedding Milestone Celebration</span>
+              </div>
+              <div class="card-meta">
+                <span>[ HIGHLIGHT REEL ]</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: The Ride Master -->
+          <article class="project-card" data-category="editorial" data-video-modal data-title="The Ride Master" data-category-label="Documentary & Narrative" data-meta="Visual Narrative Film • Canada • Directed by Kojo Adejumo" data-video-src="assets/videos/showreel-preview.mp4">
+            <div class="card-reticle reticle-tl"></div>
+            <div class="card-reticle reticle-tr"></div>
+            <div class="card-reticle reticle-bl"></div>
+            <div class="card-reticle reticle-br"></div>
+
+            <div class="card-media">
+              <img src="assets/images/editorial-2.jpg" alt="The Ride Master Narrative" loading="lazy">
+              <video muted loop playsinline preload="none">
+                <source src="assets/videos/showreel-preview.mp4" type="video/mp4">
+              </video>
+              <div class="card-play-trigger">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </div>
+            </div>
+            <div class="card-info">
+              <div>
+                <h3 class="card-title">The Ride Master</h3>
+                <span class="card-category">Documentary & Narrative Story</span>
+              </div>
+              <div class="card-meta">
+                <span>[ NARRATIVE ]</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- =======================
+             B. LIST VIEW (Hovig Hagopian Table Mode)
+             ======================= -->
+        <div class="projects-list" id="projectsList">
+          <div class="list-item" data-category="commercial" data-video-modal data-title="Polo Club" data-category-label="Commercial & Lifestyle" data-meta="Directed & Shot by Kojo Adejumo • 4K Cinema" data-video-src="assets/videos/showreel-preview.mp4">
+            <div class="list-item-title">
+              <span class="list-marker">[01]</span>
+              Polo Club
+            </div>
+            <div class="list-item-cat">Commercial & Luxury</div>
+            <div class="list-item-loc">Canada</div>
+            <div class="list-item-year">2026</div>
+            <div><span class="list-action-btn">Play Film →</span></div>
+          </div>
+
+          <div class="list-item" data-category="wedding" data-video-modal data-title="Francisca & Anthony" data-category-label="Cinematic Wedding Feature" data-meta="Feature Highlight Film • Canada • Directed by Kojo Adejumo" data-video-src="assets/videos/showreel-preview.mp4">
+            <div class="list-item-title">
+              <span class="list-marker">[02]</span>
+              Francisca & Anthony
+            </div>
+            <div class="list-item-cat">Wedding Feature</div>
+            <div class="list-item-loc">Canada</div>
+            <div class="list-item-year">2026</div>
+            <div><span class="list-action-btn">Play Film →</span></div>
+          </div>
+
+          <div class="list-item" data-category="commercial" data-video-modal data-title="Axon Socials" data-category-label="Branded Campaign" data-meta="Client Campaign • 4K Editorial • Directed by Kojo Adejumo" data-video-src="assets/videos/showreel-preview.mp4">
+            <div class="list-item-title">
+              <span class="list-marker">[03]</span>
+              Axon Socials
+            </div>
+            <div class="list-item-cat">Branded Social</div>
+            <div class="list-item-loc">Canada</div>
+            <div class="list-item-year">2025</div>
+            <div><span class="list-action-btn">Play Film →</span></div>
+          </div>
+
+          <div class="list-item" data-category="fitness" data-video-modal data-title="D_Champs Fit" data-category-label="High-Energy Dynamic Motion" data-meta="Sports & Athletic Direction • Directed by Kojo Adejumo" data-video-src="assets/videos/showreel-preview.mp4">
+            <div class="list-item-title">
+              <span class="list-marker">[04]</span>
+              D_Champs Fit
+            </div>
+            <div class="list-item-cat">Athletic & Motion</div>
+            <div class="list-item-loc">Canada</div>
+            <div class="list-item-year">2025</div>
+            <div><span class="list-action-btn">Play Film →</span></div>
+          </div>
+
+          <div class="list-item" data-category="wedding" data-video-modal data-title="Hope & Francis" data-category-label="Wedding Film Story" data-meta="Cinematic Wedding Highlights • Directed by Kojo Adejumo" data-video-src="assets/videos/showreel-preview.mp4">
+            <div class="list-item-title">
+              <span class="list-marker">[05]</span>
+              Hope & Francis
+            </div>
+            <div class="list-item-cat">Wedding Ceremony</div>
+            <div class="list-item-loc">Canada</div>
+            <div class="list-item-year">2025</div>
+            <div><span class="list-action-btn">Play Film →</span></div>
+          </div>
+
+          <div class="list-item" data-category="editorial" data-video-modal data-title="The Ride Master" data-category-label="Documentary & Narrative" data-meta="Visual Narrative Film • Canada • Directed by Kojo Adejumo" data-video-src="assets/videos/showreel-preview.mp4">
+            <div class="list-item-title">
+              <span class="list-marker">[06]</span>
+              The Ride Master
+            </div>
+            <div class="list-item-cat">Documentary Short</div>
+            <div class="list-item-loc">Canada</div>
+            <div class="list-item-year">2024</div>
+            <div><span class="list-action-btn">Play Film →</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. PHOTOGRAPHY SHOWCASE (Editorial Masonry Stills)
+         ========================================================================== -->
+    <section class="section" id="photography" style="background: #090909; border-top: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-header-hud">
+          <div class="section-title-wrap">
+            <span class="section-hud-label">[ ARCHIVE // 02 ]</span>
+            <h2 class="section-title">Moments in Focus (Photography)</h2>
+          </div>
+          <p class="mono-tag" style="color: var(--text-muted);">Editorial • Convocations • Portraits • Celebrations</p>
+        </div>
+
+        <div class="photo-masonry">
+          
+          <!-- Convocation Milestone 1 -->
+          <div class="photo-card">
+            <img src="assets/images/convo-1.jpg" alt="Convocation Celebration by KojoClicks" loading="lazy">
+            <div class="photo-overlay">
+              <span class="photo-category">Milestone / Convocation</span>
+              <h4 class="photo-title">The Honor Walk</h4>
+            </div>
+          </div>
+
+          <!-- Portrait 1 -->
+          <div class="photo-card">
+            <img src="assets/images/portrait-1.jpg" alt="Editorial Portrait by Kojo Adejumo" loading="lazy">
+            <div class="photo-overlay">
+              <span class="photo-category">Editorial Portrait</span>
+              <h4 class="photo-title">Golden Hour Presence</h4>
+            </div>
+          </div>
+
+          <!-- Convocation Milestone 2 -->
+          <div class="photo-card">
+            <img src="assets/images/convo-2.jpg" alt="Graduation Portrait by KojoClicks" loading="lazy">
+            <div class="photo-overlay">
+              <span class="photo-category">Convocation Series</span>
+              <h4 class="photo-title">Academic Triumph</h4>
+            </div>
+          </div>
+
+          <!-- Fashion / Creative -->
+          <div class="photo-card">
+            <img src="assets/images/fashion-1.jpg" alt="Creative Editorial Fashion" loading="lazy">
+            <div class="photo-overlay">
+              <span class="photo-category">Fashion & Creative</span>
+              <h4 class="photo-title">Studio Silhouette</h4>
+            </div>
+          </div>
+
+          <!-- Convocation Milestone 3 -->
+          <div class="photo-card">
+            <img src="assets/images/convo-3.jpg" alt="Convocation Candid Moment" loading="lazy">
+            <div class="photo-overlay">
+              <span class="photo-category">Convocation Series</span>
+              <h4 class="photo-title">A Proud Horizon</h4>
+            </div>
+          </div>
+
+          <!-- Event 1 -->
+          <div class="photo-card">
+            <img src="assets/images/event-1.jpg" alt="Live Event Photography" loading="lazy">
+            <div class="photo-overlay">
+              <span class="photo-category">Live Events & Galas</span>
+              <h4 class="photo-title">Evening in Radiance</h4>
+            </div>
+          </div>
+
+          <!-- Convocation Milestone 4 -->
+          <div class="photo-card">
+            <img src="assets/images/convo-4.jpg" alt="Graduation Milestone" loading="lazy">
+            <div class="photo-overlay">
+              <span class="photo-category">Convocation Milestone</span>
+              <h4 class="photo-title">Chapter One Complete</h4>
+            </div>
+          </div>
+
+          <!-- Portrait 3 -->
+          <div class="photo-card">
+            <img src="assets/images/portrait-3.jpg" alt="Creative Portraiture" loading="lazy">
+            <div class="photo-overlay">
+              <span class="photo-category">Creative Direction</span>
+              <h4 class="photo-title">Character & Light</h4>
+            </div>
+          </div>
+
+          <!-- Event 2 -->
+          <div class="photo-card">
+            <img src="assets/images/event-2.jpg" alt="Event Atmosphere" loading="lazy">
+            <div class="photo-overlay">
+              <span class="photo-category">Cultural Celebration</span>
+              <h4 class="photo-title">Vibrant Heritage</h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. TRAVEL STORIES (Burundi, Barbados, Canada, Africa)
+         ========================================================================== -->
+    <section class="section" id="travel">
+      <div class="container">
+        <div class="section-header-hud">
+          <div class="section-title-wrap">
+            <span class="section-hud-label">[ EXPEDITIONS // 03 ]</span>
+            <h2 class="section-title">Travel & Visual Narratives</h2>
+          </div>
+          <p class="mono-tag" style="color: var(--accent-gold);">Based in Canada · Creating Everywhere</p>
+        </div>
+
+        <div class="travel-grid">
+          
+          <!-- Burundi -->
+          <article class="travel-card">
+            <div class="travel-media">
+              <img src="assets/images/travel-1.jpg" alt="Burundi Travel Story" loading="lazy">
+              <div class="travel-stamp">[ BURUNDI ]</div>
+            </div>
+            <div class="travel-body">
+              <h3 class="travel-location">Burundi</h3>
+              <p class="travel-tagline">People. Places. Stories.</p>
+              <p class="travel-desc">
+                An intimate visual exploration capturing authentic community spirit, rolling hills, and rich cultural traditions through cinema and documentary stills.
+              </p>
+            </div>
+          </article>
+
+          <!-- Barbados -->
+          <article class="travel-card">
+            <div class="travel-media">
+              <img src="assets/images/lifestyle-1.jpg" alt="Barbados Island Stories" loading="lazy">
+              <div class="travel-stamp">[ BARBADOS ]</div>
+            </div>
+            <div class="travel-body">
+              <h3 class="travel-location">Barbados</h3>
+              <p class="travel-tagline">Coastal Light & Vibrant Soul.</p>
+              <p class="travel-desc">
+                Immersed in golden Atlantic sunlight, celebrating island culture, spirited gatherings, and breathtaking coastlines framed with high-dynamic range visuals.
+              </p>
+            </div>
+          </article>
+
+          <!-- Canada -->
+          <article class="travel-card">
+            <div class="travel-media">
+              <img src="assets/images/editorial-2.jpg" alt="Canada Visual Stories" loading="lazy">
+              <div class="travel-stamp">[ CANADA ]</div>
+            </div>
+            <div class="travel-body">
+              <h3 class="travel-location">Canada</h3>
+              <p class="travel-tagline">Modern Spaces & Untamed Horizons.</p>
+              <p class="travel-desc">
+                Our creative headquarters. From Toronto's fast-paced cinematic editorial landscape to sweeping northern vistas, capturing moments that define modern Canada.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. MEET KOJO ADEJUMO (Whitman Bio x Hovig Cinematographer Persona)
+         ========================================================================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-split">
+          
+          <div class="about-image-frame">
+            <div class="about-image-inner">
+              <img src="assets/images/kojo-profile.jpg" alt="Kojo Adejumo — Filmmaker & Cinematographer" loading="lazy">
+            </div>
+            <div class="about-caption-hud">
+              <span>DIR. KOJO ADEJUMO</span>
+              <span>CANADIAN DP & FILMMAKER</span>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <span class="mono-tag" style="margin-bottom: 0.75rem; display: block;">MEET KOJO — THE FILMMAKER BEHIND THE LENS</span>
+            <h2 class="section-title" style="margin-bottom: 1.5rem;">Kojo Adejumo</h2>
+            
+            <p class="about-quote">
+              “Every frame holds a story. My job is to find it, capture it, and make it unforgettable.”
+            </p>
+
+            <p class="about-text">
+              Kojo Adejumo is a Canadian-based filmmaker, cinematographer, and visual director. With an eye trained on emotion, rhythm, and light, Kojo crafts high-end commercials, documentary narratives, cinematic weddings, and milestone photography.
+            </p>
+
+            <p class="about-text">
+              Through <strong>KOJOCLICKS</strong>, the mission is simple: elevate every subject beyond ordinary capture into a timeless visual experience. Whether working on commercial sets in Toronto, destination wedding productions, or documentary stories across Africa and the Caribbean, Kojo brings intentional direction to every frame.
+            </p>
+
+            <div class="about-specs-grid">
+              <div class="spec-item">
+                <span class="spec-title">PRIMARY ROLES</span>
+                <span class="spec-value">Director / Cinematographer / DP</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-title">CORE DISCIPLINES</span>
+                <span class="spec-value">Commercial, Weddings, Portraits</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-title">HEADQUARTERS</span>
+                <span class="spec-value">Canada (Global Availability)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-title">PRODUCTION FORMAT</span>
+                <span class="spec-value">4K Cinema / Anamorphic Master</span>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn-primary">Collaborate with Kojo</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. SERVICES & CAPABILITIES
+         ========================================================================== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header-hud">
+          <div class="section-title-wrap">
+            <span class="section-hud-label">[ PRODUCTION SCOPE // 04 ]</span>
+            <h2 class="section-title">Services & Deliverables</h2>
+          </div>
+          <p class="mono-tag" style="color: var(--text-muted);">End-to-end creative direction & capture</p>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-num">[ 01 ]</div>
+            <h3 class="service-title">Commercial & Brand Films</h3>
+            <p class="service-desc">
+              Cinematic brand storytelling designed to position companies with authority. High-converting social spots, company profiles, and product launches.
+            </p>
+            <ul class="service-features">
+              <li>Creative Concept & Script</li>
+              <li>Cinema Camera Package</li>
+              <li>Sound Design & Color Grade</li>
+            </ul>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-num">[ 02 ]</div>
+            <h3 class="service-title">Cinematic Weddings & Milestones</h3>
+            <p class="service-desc">
+              Feature-length wedding films and highlight reels capturing genuine emotion, laughter, and romance with timeless editorial elegance.
+            </p>
+            <ul class="service-features">
+              <li>Full-Day Multi-Cam Coverage</li>
+              <li>Drone Aerial Cinematography</li>
+              <li>Teaser Reel + 4K Feature Film</li>
+            </ul>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div class="service-num">[ 03 ]</div>
+            <h3 class="service-title">Editorial & Milestone Photography</h3>
+            <p class="service-desc">
+              Prestigious Convocation / Graduation portraits, executive studio portraits, and lifestyle captures framed with magazine-grade lighting.
+            </p>
+            <ul class="service-features">
+              <li>Convocation & Grad Sessions</li>
+              <li>High-End Retouching</li>
+              <li>Private High-Res Gallery</li>
+            </ul>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card">
+            <div class="service-num">[ 04 ]</div>
+            <h3 class="service-title">International & Travel Productions</h3>
+            <p class="service-desc">
+              Documentary and destination filmmaking for international organizations, tourism boards, and global productions across Canada and abroad.
+            </p>
+            <ul class="service-features">
+              <li>Remote Expedition Gear</li>
+              <li>Multicultural Storytelling</li>
+              <li>Bespoke Documentary Editing</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. CLIENT TRUST & TESTIMONIALS
+         ========================================================================== -->
+    <section class="section" style="background: #080808; border-top: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-header-hud">
+          <div class="section-title-wrap">
+            <span class="section-hud-label">[ PRAISE // 05 ]</span>
+            <h2 class="section-title">Client Words & Trust</h2>
+          </div>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <div class="testimonial-card">
+            <p class="test-quote">
+              “Kojo didn't just record our wedding—he created an emotional movie that brought our entire family to tears. The cinematic quality and care were beyond what we dreamed of.”
+            </p>
+            <div class="test-author">
+              <div class="test-meta">
+                <h5>Francisca & Anthony</h5>
+                <span>Wedding Film Clients • Canada</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="test-quote">
+              “The commercial content Kojo directed for our campaign transformed how people perceive our brand. Fast, professional, and visually spectacular.”
+            </p>
+            <div class="test-author">
+              <div class="test-meta">
+                <h5>Axon Media Group</h5>
+                <span>Commercial Client</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="test-quote">
+              “My convocation photos were breathtaking. He made me feel completely relaxed and captured the pride and joy of that milestone perfectly.”
+            </p>
+            <div class="test-author">
+              <div class="test-meta">
+                <h5>Sarah O.</h5>
+                <span>Convocation Portrait Session</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. BOOKING & INQUIRY FORM (Start a Project)
+         ========================================================================== -->
+    <section class="section booking-section" id="contact">
+      <div class="container">
+        <div class="booking-wrapper">
+          
+          <div class="booking-info">
+            <div class="booking-info-header">
+              <span class="mono-tag" style="margin-bottom: 0.75rem; display: block;">INQUIRY // BOOKING</span>
+              <h2>Let's Tell Your Story.</h2>
+              <p>
+                Have an upcoming project, wedding, commercial campaign, or portrait session? Tell us your vision and let's bring it to life with cinematic precision.
+              </p>
+            </div>
+
+            <div class="contact-quick-links">
+              <!-- Direct WhatsApp Button -->
+              <a href="#" class="quick-link-item" id="directWhatsAppBtn">
+                <div class="quick-link-icon">💬</div>
+                <div class="quick-link-text">
+                  <h6>Instant Messaging</h6>
+                  <p>Chat Directly on WhatsApp</p>
+                </div>
+              </a>
+
+              <!-- Direct Email -->
+              <a href="mailto:natureuncutt@gmail.com" class="quick-link-item">
+                <div class="quick-link-icon">✉️</div>
+                <div class="quick-link-text">
+                  <h6>Direct Email</h6>
+                  <p>natureuncutt@gmail.com</p>
+                </div>
+              </a>
+
+              <!-- Location -->
+              <div class="quick-link-item">
+                <div class="quick-link-icon">📍</div>
+                <div class="quick-link-text">
+                  <h6>Studio Location</h6>
+                  <p>Based in Canada • Worldwide Travel</p>
+                </div>
+              </div>
+            </div>
+
+            <p class="mono-tag" style="color: var(--text-muted);">
+              KOJOCLICKS.CA — Stories in Motion. Moments in Focus.
+            </p>
+          </div>
+
+          <!-- Project Intake Form -->
+          <form class="booking-form" id="projectInquiryForm">
+            <div class="form-grid">
+              
+              <div class="form-group">
+                <label class="form-label" for="client_name">Your Full Name *</label>
+                <input class="form-input" type="text" id="client_name" name="client_name" placeholder="e.g. Maya Lin" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="client_email">Email Address *</label>
+                <input class="form-input" type="email" id="client_email" name="client_email" placeholder="name@domain.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="client_phone">Phone / WhatsApp</label>
+                <input class="form-input" type="tel" id="client_phone" name="client_phone" placeholder="+1 (416) 000-0000">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="project_type">Service Required</label>
+                <select class="form-select" id="project_type" name="project_type">
+                  <option value="Commercial Film">Commercial & Branded Film</option>
+                  <option value="Wedding Film">Cinematic Wedding Film</option>
+                  <option value="Convocation / Portrait">Convocation & Portrait Session</option>
+                  <option value="Event Coverage">Live Event Cinematography</option>
+                  <option value="Documentary / Travel">Documentary & Travel Production</option>
+                  <option value="Other Project">Other Creative Collaboration</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="project_date">Estimated Date</label>
+                <input class="form-input" type="date" id="project_date" name="project_date">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="project_location">Location / City</label>
+                <input class="form-input" type="text" id="project_location" name="project_location" placeholder="e.g. Toronto, Montreal, Destination">
+              </div>
+
+              <div class="form-group full-width">
+                <label class="form-label" for="project_message">Your Vision & Project Details</label>
+                <textarea class="form-textarea" id="project_message" name="project_message" placeholder="Tell us about your project, timeline, creative references, and requirements..."></textarea>
+              </div>
+
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; padding: 1rem;">
+              Send Project Inquiry →
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       11. FULLSCREEN VIDEO MODAL (Cinema Theater Mode)
+       ========================================================================== -->
+  <div class="video-modal" id="videoModal" role="dialog" aria-modal="true">
+    <div class="video-modal-container">
+      <button class="modal-close-btn" id="modalCloseBtn">
+        <span>Close Theater [ESC]</span>
+        <span>✕</span>
+      </button>
+
+      <div class="video-modal-player">
+        <video id="modalVideoPlayer" controls playsinline>
+          <source src="" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="video-modal-meta">
+        <div>
+          <h3 id="modalTitle" style="font-size: 1.25rem;">Project Title</h3>
+          <span id="modalCategory" class="mono-tag">Cinematography</span>
+        </div>
+        <div>
+          <span id="modalMeta" class="mono-tag" style="color: var(--text-muted);">Format: 4K Cinema</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       12. PHOTO LIGHTBOX MODAL
+       ========================================================================== -->
+  <div class="photo-lightbox" id="photoLightbox" role="dialog" aria-modal="true">
+    <div class="lightbox-content">
+      <button class="modal-close-btn" id="lightboxCloseBtn" style="top: -2.5rem; right: 0;">
+        <span>Close [ESC]</span>
+        <span>✕</span>
+      </button>
+      <img id="lightboxImg" src="" alt="Expanded View">
+      <p id="lightboxCaption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       13. FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 1rem;">
+            <span class="brand-name" style="font-size: 1.75rem;">KOJOCLICKS</span>
+            <span class="brand-sub">Film • Photography • Stories</span>
+          </div>
+          <p>
+            A high-end cinematic portfolio representing filmmaker and cinematographer Kojo Adejumo. Dedicated to finding the story in every frame and making it unforgettable.
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h5>Navigation</h5>
+            <ul>
+              <li><a href="#home">Home Showreel</a></li>
+              <li><a href="#films">Film Archive</a></li>
+              <li><a href="#photography">Stills & Portraits</a></li>
+              <li><a href="#travel">Travel Stories</a></li>
+              <li><a href="#about">About Kojo</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Disciplines</h5>
+            <ul>
+              <li><a href="#films">Commercial & Branded</a></li>
+              <li><a href="#films">Cinematic Weddings</a></li>
+              <li><a href="#photography">Convocation Milestones</a></li>
+              <li><a href="#films">Dynamic Motion</a></li>
+              <li><a href="#travel">Global Documentaries</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Connect</h5>
+            <ul>
+              <li><a href="mailto:natureuncutt@gmail.com">natureuncutt@gmail.com</a></li>
+              <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a href="https://vimeo.com" target="_blank" rel="noopener">Vimeo</a></li>
+              <li><a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a></li>
+              <li><a href="#contact">Book a Session</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 KOJOCLICKS. All rights reserved. • KOJOCLICKS.CA
+        </div>
+        <div>
+          <span>🇨🇦 BASED IN CANADA · CREATING EVERYWHERE</span>
+        </div>
+        <div>
+          <span>DIRECTED BY KOJO ADEJUMO</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
